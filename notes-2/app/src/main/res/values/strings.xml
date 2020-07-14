@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Notes</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Connect</item>
+        <item>Fixtures</item>
+        <item>Table</item>
+    </string-array>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <TextView
+        android:id="@+id/catName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:padding="13dp"
+        android:textColor="#060607"
+        android:text="Category"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:id="@+id/linearLayoutEdit"
+        >
+        <EditText
+            android:id="@+id/catNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:padding="13dp"
+            android:textColor="#060607"
+            android:text="Category"
+            android:layout_weight="1"
+            />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/update"
+            android:layout_margin="10dp"
+            android:layout_weight="4"
+            android:id="@+id/catNameEditUpdate"
+            ></ImageButton>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cancel"
+            android:layout_margin="10dp"
+            android:layout_weight="4"
+            android:id="@+id/catNameEditCancel"
+            ></ImageButton>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_below="@id/catName"/>
+</RelativeLayout>
